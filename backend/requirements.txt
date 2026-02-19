@@ -1,0 +1,20 @@
+# Web
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+
+# Database
+sqlalchemy>=2.0.0
+aiosqlite>=0.19.0
+greenlet>=3.0.0
+
+# Media
+yt-dlp>=2024.1.0
+ffmpeg-python>=0.2.0
+pydub>=0.25.1
+
+# ASR (optional, heavy - install separately: pip install openai-whisper)
+# openai-whisper>=20231117
+
+# Utils
+python-multipart>=0.0.6
+pydantic-settings>=2.0.0

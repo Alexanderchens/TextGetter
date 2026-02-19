@@ -1,0 +1,1 @@
+"""GetTheText Backend Application."""
