@@ -42,38 +42,27 @@
 - ffmpeg
 - （可选）NVIDIA GPU，用于加速 ASR/OCR
 
-### 安装
+### 安装与运行
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/GetTheText.git
-cd GetTheText
+git clone https://github.com/Alexanderchens/TextGetter.git
+cd TextGetter
 
 # 后端
-cd backend && pip install -r requirements.txt
-
-# 前端
-cd frontend && npm install
-```
-
-### 运行
-
-```bash
-# 1. 启动后端（需先安装 ffmpeg）
-cd backend
-source venv/bin/activate  # Windows: venv\Scripts\activate
+cd backend && python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
-python -m uvicorn app.main:app --reload --port 8000
 
-# 2. 启动前端（另开终端）
-cd frontend
-npm install
-npm run dev
+# 前端（另开终端）
+cd frontend && npm install && npm run dev
 ```
+
+> 📖 **完整说明**：环境配置、依赖安装、运行方式及常见问题，请参阅 [环境配置与运行指南](docs/SETUP.md)。
 
 **使用方式**：
-- 本地上传：拖拽或选择视频/图片文件，自动提取文案
-- 本地路径：输入本地文件的完整路径（如 `/Users/xxx/video.mp4`），点击开始提取
+- **B 站链接**：粘贴 BV/av 链接，自动下载并提取
+- **本地上传**：拖拽或选择视频/图片文件，自动提取文案
+- **本地路径**：输入本地文件的完整路径（如 `/Users/xxx/video.mp4`），点击开始提取
 
 ---
 
@@ -108,11 +97,13 @@ GetTheText/
 │   ├── parsers/       # 平台解析器
 │   └── extractors/    # ASR、OCR、字幕提取
 ├── docs/
+│   ├── SETUP.md          # 环境配置与运行指南
 │   └── ARCHITECTURE.md   # 详细架构设计
 └── README.md
 ```
 
-更多架构与模块说明见 [ docs/ARCHITECTURE.md ](docs/ARCHITECTURE.md)。
+- [环境配置与运行指南](docs/SETUP.md)
+- [架构与模块说明](docs/ARCHITECTURE.md)
 
 ---
 
