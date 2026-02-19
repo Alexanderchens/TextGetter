@@ -1,4 +1,4 @@
-# 多模态视频文案提取工具 - 系统架构设计
+# TextGetter - 多模态视频文案提取工具 - 系统架构设计
 
 ## 一、项目概述
 
@@ -255,7 +255,7 @@ def detect_platform(input: str) -> PlatformInfo:
 ## 八、目录结构建议
 
 ```
-GetTheText/
+TextGetter/
 ├── frontend/                 # 统一前端
 │   ├── src/
 │   │   ├── components/

@@ -20,7 +20,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="GetTheText",
+    title="TextGetter",
     description="多模态视频文案提取工具",
     version="0.1.0",
     lifespan=lifespan,
@@ -40,4 +40,4 @@ app.include_router(tasks_router.router, prefix="/api/tasks", tags=["tasks"])
 @app.get("/")
 async def root():
     """Health check."""
-    return {"status": "ok", "app": "GetTheText"}
+    return {"status": "ok", "app": "TextGetter"}

@@ -190,10 +190,10 @@ migrations/
 
 ```python
 # 开发环境：SQLite
-DATABASE_URL = "sqlite:///./data/getthetext.db"
+DATABASE_URL = "sqlite:///./data/textgetter.db"
 
 # 生产环境：PostgreSQL
-DATABASE_URL = "postgresql://user:pass@host:5432/getthetext"
+DATABASE_URL = "postgresql://user:pass@host:5432/textgetter"
 ```
 
 使用 SQLAlchemy 或 asyncpg + 原生 SQL，按项目偏好选择。

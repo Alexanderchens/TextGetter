@@ -1,4 +1,4 @@
-# GetTheText
+# TextGetter
 
 <p align="center">
   <strong>多模态视频文案提取工具</strong><br/>
@@ -7,9 +7,9 @@
 
 <p align="center">
   <!-- 开源后可取消注释
-  <img src="https://img.shields.io/github/license/your-username/GetTheText?style=flat-square" alt="license" />
-  <img src="https://img.shields.io/github/stars/your-username/GetTheText?style=flat-square" alt="stars" />
-  <img src="https://img.shields.io/github/issues/your-username/GetTheText?style=flat-square" alt="issues" />
+  <img src="https://img.shields.io/github/license/Alexanderchens/TextGetter?style=flat-square" alt="license" />
+  <img src="https://img.shields.io/github/stars/Alexanderchens/TextGetter?style=flat-square" alt="stars" />
+  <img src="https://img.shields.io/github/issues/Alexanderchens/TextGetter?style=flat-square" alt="issues" />
   -->
 </p>
 
@@ -91,7 +91,7 @@ cd frontend && npm install && npm run dev
 ## 🏗️ 项目结构
 
 ```
-GetTheText/
+TextGetter/
 ├── frontend/          # 统一前端（React/Vue）
 ├── backend/           # 后端服务（FastAPI）
 │   ├── parsers/       # 平台解析器

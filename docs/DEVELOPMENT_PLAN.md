@@ -1,4 +1,4 @@
-# GetTheText 开发计划
+# TextGetter 开发计划
 
 ## 总体策略
 

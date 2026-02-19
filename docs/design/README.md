@@ -1,6 +1,6 @@
 # 模块详细设计文档
 
-本目录包含 GetTheText 各核心模块的详细设计，与 [ARCHITECTURE.md](../ARCHITECTURE.md) 中的整体架构对应。
+本目录包含 TextGetter 各核心模块的详细设计，与 [ARCHITECTURE.md](../ARCHITECTURE.md) 中的整体架构对应。
 
 ---
 

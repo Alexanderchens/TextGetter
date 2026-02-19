@@ -1,6 +1,6 @@
 # 环境配置与运行指南
 
-本文档详细介绍 GetTheText 项目的环境配置、依赖安装与运行方式。
+本文档详细介绍 TextGetter 项目的环境配置、依赖安装与运行方式。
 
 ---
 
@@ -101,7 +101,7 @@ npm install
 
 | 变量 | 默认值 | 说明 |
 |------|--------|------|
-| `DATABASE_URL` | `sqlite+aiosqlite:///./data/getthetext.db` | 数据库连接 |
+| `DATABASE_URL` | `sqlite+aiosqlite:///./data/textgetter.db` | 数据库连接 |
 | `DEBUG` | `false` | 调试模式 |
 | `ASR_MODEL` | `base` | Whisper 模型 (tiny/base/small/medium/large-v3) |
 
@@ -173,7 +173,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4
 ```
 backend/
 ├── data/
-│   ├── getthetext.db    # SQLite 数据库
+│   ├── textgetter.db    # SQLite 数据库
 │   └── cache/           # 下载的视频/字幕缓存（按任务 ID 分目录）
 ```
 

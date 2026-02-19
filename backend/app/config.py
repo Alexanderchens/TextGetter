@@ -7,11 +7,11 @@ class Settings(BaseSettings):
     """Application settings."""
 
     # App
-    app_name: str = "GetTheText"
+    app_name: str = "TextGetter"
     debug: bool = False
 
     # Database
-    database_url: str = "sqlite+aiosqlite:///./data/getthetext.db"
+    database_url: str = "sqlite+aiosqlite:///./data/textgetter.db"
 
     # Storage
     data_dir: Path = Path("./data")
